@@ -131,11 +131,17 @@ section.contact h2{
   font-size: 3.5rem;
 }
 
-section.contact form{
+section.contact .box-contact{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section.contact .box-contact form{
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-  max-width: 65rem;
+  width: 45%;
   padding: 3rem 1.5rem;
 }
 
@@ -222,6 +228,16 @@ section.contact form button{
   -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.3);
   -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.3);
   box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+section.contact form button:hover{
+  background-color: #5a61c0;
+  /* transform: scale(1.5); */
+}
+
+section.contact .box-contact img{
+  max-width: 39rem;
 }
 
 footer{
