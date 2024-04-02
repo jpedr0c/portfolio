@@ -8,11 +8,9 @@
   font-size: clamp(40%, 1% + 2vw, 62.5%);
 }
 
-/* 
-  font-family: "Fjalla One", sans-serif;
-  font-family: "Anton", sans-serif;
-  font-family: "Roboto", sans-serif;
-*/
+html{
+  scroll-behavior: smooth;
+}
 
 body{
   width: 100%;
@@ -25,17 +23,25 @@ a{
   text-decoration: none;
 }
 
+h2{
+  color: #424BC0;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 3.5rem;
+}
+
 #app{
   max-width: 1440px;
   margin: 0 auto;
 }
 
 header{
+  width: 100%;
+  padding: 3rem 9rem;
   background-color: #343434;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4rem 9rem;
+  margin: 0 auto;
 }
 
 header img{
@@ -57,6 +63,11 @@ header nav ul{
 header nav ul li{
   color: #FFFFFF;
   font-family: "Fjalla One", sans-serif;
+  transition: .3s;
+}
+
+header nav ul li:hover{
+  color: #a1a1a1;
 }
 
 section.capa{
@@ -110,25 +121,103 @@ section.capa .buttons-socials a{
   color: #000000;
 }
 
-section.about h2{
-  color: #424BC0;
-  font-family: "Fjalla One", sans-serif;
-  font-size: 3.5rem;
-}
-
-section.about p{
-  max-width: 70rem;
-  text-align: justify;
-}
-
-section.contact{
+section.about, section.projects, section.contact{
   padding: 4.5rem 3rem;
 }
 
-section.contact h2{
-  color: #424BC0;
+
+section.about p{
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  max-width: 70rem;
+  text-align: justify;
+  padding: 3rem 1.5rem 2rem 1.5rem;
+}
+
+section.about .box-stack{
+  padding: 0 1.5rem;
+}
+
+section.about .box-stack h4{
+  color: #6e6e6e;
   font-family: "Fjalla One", sans-serif;
-  font-size: 3.5rem;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+section.about .box-stack .stacks{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+section.about .box-stack .stacks img{
+  max-width: 3.5rem;
+}
+
+section.projects .cards{
+  display: flex;
+  align-items: center;
+}
+
+section.projects .card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #343434;
+  max-width: 36rem;
+  padding: 2.5rem 3rem;
+  border-radius: 2rem;
+  margin: 3rem 1.5rem 2rem 1.5rem;
+}
+
+section.projects .card img{
+  max-width: 24rem;
+  padding: 1.5rem 0;
+}
+
+section.projects .card h4{
+  font-family: "Fjalla One", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+section.projects .card .stacks{
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  color: #FFFFFF;
+  gap: .5rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+section.projects .card .stacks img{
+  max-width: 2rem;
+}
+
+
+section.projects .buttons{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+section.projects .buttons .button-card{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  background-color: #EDEDED;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  color: #000000;
+  font-size: 1.6rem;
+  transition: .3s;
+}
+
+section.projects .buttons .button-card:hover{
+  background-color: #cccccc;
 }
 
 section.contact .box-contact{

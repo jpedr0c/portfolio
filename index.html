@@ -10,18 +10,17 @@
   <title>jocardos.dev</title>
 </head>
 <body>
+  <header>
+    <a href="/"><img src="./assets/logo.png" alt=""></a>
+    <nav>
+      <ul>
+        <a href="#about"><li>Sobre mim</li></a>
+        <a href="#projects"><li>Projetos</li></a>
+        <a href="#contact"><li>Contato</li></a>
+      </ul>
+    </nav>
+  </header>
   <div id="app">
-    <header>
-      <a href=""><img src="./assets/logo.png" alt=""></a>
-      <nav>
-        <ul>
-          <a href="#inicio"><li>Início</li></a>
-          <a href="#inicio"><li>Sobre mim</li></a>
-          <a href="#inicio"><li>Projetos</li></a>
-          <a href="#inicio"><li>Contato</li></a>
-        </ul>
-      </nav>
-    </header>
     <section class="capa">
       <div class="title">
         <div class="text">
@@ -36,12 +35,60 @@
       <img src="./assets/foto.png" alt="">
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
       <h2>Sobre mim</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam assumenda tempore dolorum explicabo magnam quo at excepturi ut. Facilis ipsa unde maxime, soluta nihil ratione. Praesentium sapiente blanditiis laborum nulla!</p>
+      <p>Meu nome é João Pedro Cardoso, tenho 22 anos e sou apaixonado por tecnologia, inovação, criatividade e programação. Minha jornada nesse fascinante mundo da tecnologia começou desde a minha infância, mas foi durante o Ensino Médio, quando ingressei no curso técnico em Mecatrônica, que minha paixão foi verdadeiramente despertada. Desde então, tenho dedicado minha vida a explorar e aprender tudo o que posso sobre esse universo em constante evolução. Atualmente, estou cursando o segundo período da faculdade de Análise e Desenvolvimento de Sistemas, onde continuo a aprimorar minhas habilidades e conhecimentos. A facilidade que tenho em aprender novos conceitos e a alegria que sinto ao compartilhar meu conhecimento com os outros são aspectos fundamentais da minha jornada educacional. Fico muito feliz ao ver que as pessoas aprenderam e se desenvolveram graças às minhas explicações e ensinamentos.</p>
+      <div class="box-stack">
+        <h4>Tecnologias:</h4>
+        <div class="stacks">
+          <img src="./assets/HTML.png" alt="">
+          <img src="./assets/CSS.png" alt="">
+          <img src="./assets/JS.png" alt="">
+          <img src="./assets/TS.png" alt="">
+          <img src="./assets/React.png" alt="">
+          <img src="./assets/Node.png" alt="">
+          <img src="./assets/Tailwind.png" alt="">
+          <img src="./assets/Next.png" alt="">
+        </div>
+      </div>
     </section>
 
-    <section class="contact">
+    <section id="projects" class="projects">
+      <h2>Projetos</h2>
+      <div class="cards">
+        <div class="card">
+          <h4>Usuários favoritos do Github</h4>
+          <img src="./assets/gitfav.png" alt="">
+          <div class="stacks">
+            <p>Tecnologias: </p>
+            <img src="./assets/HTML.png" alt="">
+            <img src="./assets/CSS.png" alt="">
+            <img src="./assets/JS.png" alt="">
+          </div>
+          <div class="buttons">
+            <a class="button-card" href="https://gitfav-zeta.vercel.app/" target="_blank"><ion-icon name="eye-outline"></ion-icon>Deploy</a>
+              <a class="button-card" href="https://github.com/jpedr0c/gitFav/tree/master" target="_blank"><ion-icon name="logo-github"></ion-icon>Github</a>
+          </div>
+        </div>
+  
+        <div class="card">
+          <h4>Site usando Single Page Application</h4>
+          <img src="./assets/spauniverse.png" alt="">
+          <div class="stacks">
+            <p>Tecnologias: </p>
+            <img src="./assets/HTML.png" alt="">
+            <img src="./assets/CSS.png" alt="">
+            <img src="./assets/JS.png" alt="">
+          </div>
+          <div class="buttons">
+            <a class="button-card" href="https://spa-universe-five-ashen.vercel.app/" target="_blank"><ion-icon name="eye-outline"></ion-icon>Deploy</a>
+              <a class="button-card" href="https://github.com/jpedr0c/spaUniverse/tree/master" target="_blank"><ion-icon name="logo-github"></ion-icon>Github</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
       <h2>Contato</h2>
       <div class="box-contact">
         <form action="post">
